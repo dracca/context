@@ -9,7 +9,7 @@ This repository contains an extended collection of experimental results from the
     <th>1</th>
   </tr>
 </thead>
-<div style="overflow:scroll; height:100px;">
+<div style="overflow:scroll; height:50px;">
   <tbody>
     <tr>
       <td>January</td>
