@@ -25,14 +25,14 @@ This repository contains an extended collection of experimental results from the
 |h|h|
 |h|h|
 
-<table>
-<thead>
-  <tr>
-    <th>1</th>
-    <th>1</th>
-  </tr>
-</thead>
 <div style="overflow:scroll; height:50px;">
+<table>
+  <thead>
+    <tr>
+      <th>1</th>
+      <th>1</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
       <td>January</td>
@@ -67,5 +67,5 @@ This repository contains an extended collection of experimental results from the
       <td>$80</td>
     </tr>
   </tbody>
-</div>
 </table>
+</div>
