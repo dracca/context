@@ -25,14 +25,12 @@ This repository contains an extended collection of experimental results from the
   <tr>
     <th>1</th>
     <th>1</th>
-    <th>1</th>
-    <th>1</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td colspan="2">
-      <div class="scrollit">
+      <div style="overflow:scroll; height:100px;">
         <table>
           <tr>
             <td>January</td>
