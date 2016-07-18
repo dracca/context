@@ -3,7 +3,9 @@
 This repository contains an extended collection of experimental results from the paper "On the Effectiveness of Contextualisation Techniques for Spoken Query Spoken Content Retrieval".
 
 ### bm25
+
 |MAP|Query|Docs|b|k1|k3|d|
+|---|---|---|---|---|---|---|
 |man|man|0.2912|0.43|0.97|350.36|2.04|
 |man|kaldi|0.2410|0.41|2.25|74.77|1.92|
 |man|match|0.2166|0.40|2.12|34.30|1.61|
