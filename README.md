@@ -17,7 +17,7 @@ The parameters shown in each column stand for:
   * k3: BM25 'k3' parameter to control within-query TF saturation and scale.
   * d: exponent for the RSJ weight that allows for 're-shaping' of the IDF function (see paper for more information).
   * &#963; width of the Gaussian kernel in PM methods.
-  * w: weight assigned to document scores in DIS methods.
+  * &#411;: weight assigned to document scores in DIS methods.
 
 In tables 'DIS' and 'DIS-PM', the first columns for b, k1, k3, and d correspond to the BM25 parameters used for document ranking. The second set of columns for b, k1, k3, and d correspond to the parameters used for passage ranking instead.
 
@@ -57,7 +57,7 @@ In tables 'DIS' and 'DIS-PM', the first columns for b, k1, k3, and d correspond 
 
 ### DIS
 
-|Query|Docs|MAP|b|k1|k3|d|b|k1|k3|d|w|
+|Query|Docs|MAP|b|k1|k3|d|b|k1|k3|d|&#411;|
 |---|---|---|---|---|---|---|---|---|---|---|---|
 |M|M|0.3392|0.22|3.83|79.32|1.30|0.40|0.98|683.92|2.05|0.59|
 |M|A0|0.2406|0.03|0.15|0.10|2.20|0.40|2.27|197.64|1.93|0.03|
@@ -73,7 +73,7 @@ In tables 'DIS' and 'DIS-PM', the first columns for b, k1, k3, and d correspond 
 
 ### DIS-PM
 
-|Query|Docs|MAP|b|k1|k3|d|&#963;|b|k1|k3|d|w|
+|Query|Docs|MAP|b|k1|k3|d|&#963;|b|k1|k3|d|&#411;|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |M|M|0.3494|0.50|1.13|89.97|1.74|125.80|0.00|4.72|100.00|1.10|0.43|
 |M|A0|0.3195|0.05|0.11|38.30|1.45|140.71|0.03|3.61|96.91|1.45|0.06|
