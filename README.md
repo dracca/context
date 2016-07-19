@@ -1,6 +1,6 @@
 # Context
 
-This repository contains an extended collection of experimental results from the paper "On the Effectiveness of Contextualisation Techniques for Spoken Query Spoken Content Retrieval" to be presented at the SIGIR'16 conference in Pisa, Italy.
+This repository contains an extended collection of experimental results from the paper ["On the Effectiveness of Contextualisation Techniques for Spoken Query Spoken Content Retrieval"](http://dl.acm.org/citation.cfm?doid=2911451.2914730) to be presented at the SIGIR'16 conference in Pisa, Italy.
 
 The tables below show the retrieval effectiveness in terms of mean average precision (MAP) of four retrieval methods when tested over the queries of the SpokenQuery&Doc-1 collection. Each row shows results for a specific combination of query and document transcripts. As described in the paper, the transcript IDs stand for:
   * M: manual (perfect) transcripts.
