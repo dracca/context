@@ -1,6 +1,26 @@
 # Context
 
-This repository contains an extended collection of experimental results from the paper "On the Effectiveness of Contextualisation Techniques for Spoken Query Spoken Content Retrieval".
+This repository contains an extended collection of experimental results from the paper "On the Effectiveness of Contextualisation Techniques for Spoken Query Spoken Content Retrieval" to be presented at the SIGIR'16 conference in Pisa, Italy.
+
+The tables below show the retrieval effectiveness in terms of mean average precision (MAP) of four retrieval methods when tested over the queries of the SpokenQuery&Doc-1 collection. Each row shows results for a specific combination of query and document transcripts. As described in the paper, the transcript IDs stand for:
+  * M: manual (perfect) transcripts.
+  * A0: Kaldi ASR transcripts with matched AM and LM.
+  * A1: Julius ASR transcripts with matched AM and LM.
+  * A2: Julius ASR transcripts with matched AM and unmatched LM.
+  * A3: Julius ASR transcripts with unmatch AM and LM.
+
+The results presented here were obtained by optimising model parameters on the SAME set of queries, i.e. the results report retrieval performance on the training set. We hope this will allow reproducibility of results and analysis of the (near) optimal parameters learnt on each training condition. For results over the test set queries, plese refer to our paper.
+
+The parameters shown in each column stand for:
+  * b: BM25 'b' parameter for length normalisation.
+  * k1: BM25 'k1' parameter to control within-document TF saturation and scale.
+  * k3: BM25 'k3' parameter to control within-query TF saturation and scale.
+  * d: exponent for the RSJ weight that allows for 're-shaping' of the IDF function (see paper for more information).
+  * &#963; width of the Gaussian kernel in PM methods.
+  * w: weight assigned to document scores in DIS methods.
+
+In tables 'DIS' and 'DIS-PM', the first columns for b, k1, k3, and d correspond to the BM25 parameters used for document ranking. The second set of columns for b, k1, k3, and d correspond to the parameters used for passage ranking instead.
+
 
 ### BM25
 
@@ -66,4 +86,7 @@ This repository contains an extended collection of experimental results from the
 |A1|A3|0.2470|0.00|3.43|149.80|2.35|303.02|0.06|4.04|6.45|1.39|0.47|
 |A2|A3|0.1846|0.06|4.08|60.04|1.16|250.50|0.07|4.87|142.41|1.04|0.50|
 |A3|A3|0.1963|0.06|4.97|0.00|1.00|151.21|0.08|4.85|142.50|1.89|0.45|
+
+The above tables only show the results for the best performing parameter configuration. Full results for many other parameter configurations can be found [here](https://drive.google.com/folderview?id=0B2PA0zyoxr0rTFlSRUwwdzgyUWc&usp=sharing).
+
 
